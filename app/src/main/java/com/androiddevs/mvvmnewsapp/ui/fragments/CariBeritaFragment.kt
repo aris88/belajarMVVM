@@ -15,5 +15,7 @@ class CariBeritaFragment : Fragment(R.layout.fragment_cari_berita) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel = (activity as BeritaActivity).viewModel
+
+
     }
 }
