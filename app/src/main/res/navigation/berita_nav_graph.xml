@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/berita_nav_graph"
+    app:startDestination="@id/beritaBaruFragment">
+    <fragment
+        android:id="@+id/beritaBaruFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.fragments.BeritaBaruFragment"
+        android:label="BeritaBaruFragment" >
+        <action
+            android:id="@+id/action_beritaBaruFragment_to_artikelFragment"
+            app:destination="@id/artikelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/simpanBeritaFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.fragments.SimpanBeritaFragment"
+        android:label="SimpanBeritaFragment" >
+        <action
+            android:id="@+id/action_simpanBeritaFragment_to_artikelFragment"
+            app:destination="@id/artikelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cariBeritaFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.fragments.CariBeritaFragment"
+        android:label="CariBeritaFragment" >
+        <action
+            android:id="@+id/action_cariBeritaFragment_to_artikelFragment"
+            app:destination="@id/artikelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/artikelFragment"
+        android:name="com.androiddevs.mvvmnewsapp.ui.fragments.ArtikelFragment"
+        android:label="ArtikelFragment"
+        />
+</navigation>
