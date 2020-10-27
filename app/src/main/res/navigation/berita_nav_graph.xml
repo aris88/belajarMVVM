@@ -11,10 +11,10 @@
         <action
             android:id="@+id/action_beritaBaruFragment_to_artikelFragment"
             app:destination="@id/artikelFragment"
-            app:enterAnim="@anim/slide_in_right"
+            app:enterAnim="@anim/slide_in_buttom"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popExitAnim="@anim/slide_out_bottom"/>
     </fragment>
     <fragment
         android:id="@+id/simpanBeritaFragment"

@@ -19,7 +19,7 @@ class BeritaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_berita)
 
         val beritaRepository = BeritaRepository(ArtikelDatabase(this))
-        val viewModelProviderFactory = BeritaViewModelProviderFactory(beritaRepository)
+        val viewModelProviderFactory = BeritaViewModelProviderFactory(application, beritaRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(BeritaViewModel::class.java)
 
         bottomNavigationView.setupWithNavController(beritaNavHostFragment.findNavController())

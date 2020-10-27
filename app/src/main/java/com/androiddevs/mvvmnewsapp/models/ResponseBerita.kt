@@ -1,7 +1,7 @@
 package com.androiddevs.mvvmnewsapp.models
 
 data class ResponseBerita(
-    val articles: List<Artikel>,
+    val articles: MutableList<Artikel>,
     val status: String,
     val totalResults: Int
 )
